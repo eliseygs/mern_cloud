@@ -1,0 +1,33 @@
+@import "../colors.less";
+
+input {
+    border: none;
+    border-bottom:@font-color solid 3px;
+    background:transparent;
+    display:flex;
+    width: 100%;
+    padding: 3px;
+    &:focus{
+        outline: none;
+        transform: scale(1.01)
+    }
+}
+
+::-webkit-input-placeholder {
+    color: @font-color;
+    font-weight:700;
+}
+
+::-ms-input-placeholder {
+    color: @font-color;
+    font-weight:700;
+}
+::-moz-input-placeholder {
+    color: @font-color;
+    font-weight:700;
+}
+
+::-moz-input-placeholder {
+    color: @font-color;
+    font-weight:700;
+}

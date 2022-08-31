@@ -1,0 +1,86 @@
+
+.filelist{
+    margin: 20px 0;
+
+
+
+
+&__header{
+    display: grid;
+    grid-template-columns: 1fr 4fr repeat(4, 1fr);
+}
+
+&__name{
+    grid-column-start: 2;
+    justify-self:center;
+}
+
+&__date{
+    grid-column-start: 5;
+    justify-self:center;
+}
+
+&__size{
+    grid-column-start: 6;
+    justify-self:center;
+}
+}
+
+// .file-enter-active{
+//     animation: file-in 500ms forwards;
+// }
+// .file-exist-active{
+//     animation: file-out 500ms forwards;
+// }
+
+.fileplate{
+    display:flex;
+    flex-wrap:wrap;
+    margin: 20px 0;
+}
+
+.file-enter {
+  opacity: 0;
+  transform:translateY(-100%);
+}
+
+
+.file-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+  animation: file-in 500ms;
+}
+
+.file-exit {
+  opacity: 1;
+  transform:translateY(0)
+}
+
+.file-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+  animation:t file-out 500ms;
+}
+
+@keyframes file-out{
+    0%{
+        opacity:1;
+        transform: translateY(0%)
+    }
+    100%{
+        opacity:0;
+        transform:translateY(+50%)
+
+    }
+} 
+
+@keyframes file-in{
+    0%{
+        opacity:0;
+        transform: translateY(-50%)
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0%)
+    }
+} 

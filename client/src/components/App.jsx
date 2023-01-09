@@ -19,7 +19,6 @@ function App() {
   return (
     <BrowserRouter>
     <div className="app">
-      <h1> hekll</h1>
       <Navbar/>
       <div className="wrap"> 
         {!isAuth ? 
